@@ -9,15 +9,16 @@ let diceResult = null;
 let textResult = document.querySelector('.result')
 
 // Bollean Dice Result Cases
-if (diceGiocatoreResult == diceBancoResult) {
-    diceResult = true;
+if (diceGiocatoreResult === diceBancoResult) {
+    diceResult = null;
+
 }
 else if (diceGiocatoreResult < diceBancoResult) {
     diceResult = false;
 }
 
 else {
-    diceResult = null;
+    diceResult = true;
 }
 
 // What happens with the Cases
